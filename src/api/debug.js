@@ -15,5 +15,6 @@ module.exports = (req, res) => {
     headers: req.headers,
     body: req.body,
     date: new Date(),
+    test: 1,
   })
 }
