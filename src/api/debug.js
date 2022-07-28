@@ -14,5 +14,6 @@ module.exports = (req, res) => {
     query: req.query,
     headers: req.headers,
     body: req.body,
+    date: new Date(),
   })
 }
