@@ -1,5 +1,6 @@
 export default (req, res) => {
   const name = req.query.name
+  console.log({ name })
   res.status(200).send({
     value: `Hello, ${name}!`,
     request: {
