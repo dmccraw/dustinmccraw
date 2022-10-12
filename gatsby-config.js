@@ -42,7 +42,7 @@ module.exports = {
             "X-Content-Type-Options: nosniff",
             "X-Frame-Options: ALLOW-FROM https://app.zoominfo.com",
             "X-XSS-Protection: 1; mode=block",
-            "dustin": "mccraw",
+            "dustin: mccraw",
           ],
         },
       },
