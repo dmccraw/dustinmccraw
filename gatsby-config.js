@@ -44,14 +44,13 @@ module.exports = {
             "X-XSS-Protection: 1; mode=block",
             "dustin: mccraw",
           ],
-
-          allPageHeaders: [
-            "Link: </fonts/abrilfatface-regular-webfont.woff>; rel=preload; as=font; crossorigin;",
-            "Link: </fonts/monoline-regular.otf>; rel=preload; as=font; crossorigin;",
-            "Link: </fonts/maax-webfont.woff>; rel=preload; as=font; crossorigin;",
-            "Link: </fonts/maax-medium-webfont.woff>; rel=preload; as=font; crossorigin;",
-          ], // option to add headers for all pages. `Link` headers are transformed by the below criteria
         },
+        allPageHeaders: [
+          "Link: </fonts/abrilfatface-regular-webfont.woff>; rel=preload; as=font; crossorigin;",
+          "Link: </fonts/monoline-regular.otf>; rel=preload; as=font; crossorigin;",
+          "Link: </fonts/maax-webfont.woff>; rel=preload; as=font; crossorigin;",
+          "Link: </fonts/maax-medium-webfont.woff>; rel=preload; as=font; crossorigin;",
+        ], // option to add headers for all pages. `Link` headers are transformed by the below criteria
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
