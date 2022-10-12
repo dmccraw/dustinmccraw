@@ -35,16 +35,16 @@ module.exports = {
       options: {
         mergeSecurityHeaders: false,
         // headers: { "/*": ["X-Frame-Options: SAMEORIGIN"] },
-        headers: {
-          "/*": [
-            "Content-Security-Policy: frame-ancestors https://app.zoominfo.com",
-            "Access-Control-Allow-Origin: https://app.zoominfo.com",
-            "X-Content-Type-Options: nosniff",
-            "X-Frame-Options: ALLOW-FROM https://app.zoominfo.com",
-            "X-XSS-Protection: 1; mode=block",
-            "dustin: mccraw",
-          ],
-        },
+        // headers: {
+        //   "/*": [
+        //     "Content-Security-Policy: frame-ancestors https://app.zoominfo.com",
+        //     "Access-Control-Allow-Origin: https://app.zoominfo.com",
+        //     "X-Content-Type-Options: nosniff",
+        //     "X-`Frame-Options: ALLOW-FROM https://app.zoominfo.com",
+        //     "X-XSS-Protection: 1; mode=block",
+        //     "dustin: mccraw",
+        //   ],
+        // },
         allPageHeaders: [
           "Link: </fonts/abrilfatface-regular-webfont.woff>; rel=preload; as=font; crossorigin;",
           "Link: </fonts/monoline-regular.otf>; rel=preload; as=font; crossorigin;",
