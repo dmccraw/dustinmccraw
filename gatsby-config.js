@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
-        mergeSecurityHeaders: false,
+        // mergeSecurityHeaders: false,
         // headers: { "/*": ["X-Frame-Options: SAMEORIGIN"] },
         // headers: {
         //   "/*": [
@@ -46,11 +46,14 @@ module.exports = {
         //   ],
         // },
         allPageHeaders: [
-          "Link: </fonts/abrilfatface-regular-webfont.woff>; rel=preload; as=font; crossorigin;",
-          "Link: </fonts/monoline-regular.otf>; rel=preload; as=font; crossorigin;",
-          "Link: </fonts/maax-webfont.woff>; rel=preload; as=font; crossorigin;",
-          "Link: </fonts/maax-medium-webfont.woff>; rel=preload; as=font; crossorigin;",
-        ], // option to add headers for all pages. `Link` headers are transformed by the below criteria
+          "Strict-Transport-Security: max-age=31536000; includeSubDomains; preload",
+        ],
+        // allPageHeaders: [
+        //   "Link: </fonts/abrilfatface-regular-webfont.woff>; rel=preload; as=font; crossorigin;",
+        //   "Link: </fonts/monoline-regular.otf>; rel=preload; as=font; crossorigin;",
+        //   "Link: </fonts/maax-webfont.woff>; rel=preload; as=font; crossorigin;",
+        //   "Link: </fonts/maax-medium-webfont.woff>; rel=preload; as=font; crossorigin;",
+        // ], // option to add headers for all pages. `Link` headers are transformed by the below criteria
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
