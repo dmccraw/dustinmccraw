@@ -33,7 +33,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
-        // mergeSecurityHeaders: false,
+        mergeSecurityHeaders: false,
         // headers: { "/*": ["X-Frame-Options: SAMEORIGIN"] },
         // headers: {
         //   "/*": [
