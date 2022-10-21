@@ -31,11 +31,21 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-create-client-paths`,
+      options: {
+        prefixes: [`/dashboard/*`],
+      },
+    },
+    {
       resolve: `gatsby-plugin-gatsby-cloud`,
       options: {
         mergeSecurityHeaders: false,
         // headers: { "/*": ["X-Frame-Options: SAMEORIGIN"] },
-        // headers: {
+        headers: {
+          "/using-typescript/": [
+            `x-test-header: this is the header for /new-beginnings/`,
+          ],
+        },
         //   "/*": [
         //     "Content-Security-Policy: frame-ancestors https://app.zoominfo.com",
         //     "Access-Control-Allow-Origin: https://app.zoominfo.com",
