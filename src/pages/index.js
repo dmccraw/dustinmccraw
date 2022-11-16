@@ -16,7 +16,7 @@ const IndexPage = () => {
       setTime(
         `${new Date(res["date"]).toLocaleDateString("en-US")} ${new Date(
           res["date"]
-        ).toLocaleTimeString("en-US")}`
+        ).toLocaleTimeS tring("en-US")}`
       )
     }, 10000)
 
