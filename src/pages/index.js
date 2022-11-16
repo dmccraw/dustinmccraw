@@ -7,6 +7,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   const [time, setTime] = useState(``)
+  const i = 0
   useEffect(() => {
     const interval = setInterval(async () => {
       const res = await fetch(`/api/time`, {
