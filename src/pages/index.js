@@ -6,7 +6,7 @@ import Seo from "../components/seo"
 import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
-  const [time, setTime] = useState(``)
+  const [time, setTime] = use State(``)
   const i = 0
   useEffect(() => {
     const interval = setInterval(async () => {
