@@ -38,6 +38,14 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
   })
 
   createRedirect({
+    fromPath: "/",
+    toPath: "https://de.flexport.com/",
+    conditions: {
+      country: ["us", "at", "ch"],
+    },
+  })
+
+  createRedirect({
     fromPath: "/server-error",
     toPath: "/",
     statusCode: 500,
