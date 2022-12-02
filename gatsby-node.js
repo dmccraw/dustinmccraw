@@ -37,6 +37,12 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     },
   })
 
+  createRedirect({
+    fromPath: `/docs/*`,
+    toPath: `https://www.awesomesite.com/docs/*`,
+    statusCode: 200,
+  })
+
   // createRedirect({
   //   fromPath: "/",
   //   toPath: "https://de.flexport.com/",
