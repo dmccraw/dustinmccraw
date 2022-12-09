@@ -207,6 +207,12 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     toPath: `https://www.gatsbyjs.com/why-gatsby/*`,
     statusCode: 200,
   })
+
+  createRedirect({
+    fromPath: `/portal/*`,
+    toPath: "https://portal.newmantractor.com/*",
+    statusCode: 200,
+  })
 }
 
 exports.onCreateWebpackConfig = ({ plugins, actions }) => {
