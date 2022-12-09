@@ -174,6 +174,39 @@ exports.createPages = ({ actions: { createRedirect, createPage } }) => {
     path: `/use-cases/${slug}`,
     component: useCaseTemplatePath,
   })
+
+  // testing redirects
+  createRedirect({
+    fromPath: `/blog/*`,
+    toPath: `/https://www.gatsbyjs.com/*`,
+    statusCode: 200,
+  })
+  createRedirect({
+    fromPath: `/blog2/*`,
+    toPath: `/news/*`,
+    statusCode: 200,
+  })
+  createRedirect({
+    fromPath: `/good/*`,
+    toPath: `https://www.bellanaija.com/*`,
+    statusCode: 200,
+  })
+  createRedirect({
+    fromPath: `/good2/*`,
+    toPath: `https://www.bellanaija.com/relationships/*`,
+    statusCode: 200,
+  })
+  createRedirect({
+    fromPath: `/test1/*`,
+    toPath: `/https://www.gatsbyjs.com/*`,
+    statusCode: 200,
+  })
+
+  createRedirect({
+    fromPath: `/test2/*`,
+    toPath: `https://www.gatsbyjs.com/why-gatsby/*`,
+    statusCode: 200,
+  })
 }
 
 exports.onCreateWebpackConfig = ({ plugins, actions }) => {
